@@ -1,0 +1,168 @@
+﻿<div class="row">
+    <div class="col-md-12">
+        <div class="col-md-12">
+            <ul class="nav nav-tabs">
+                <li><a data-toggle="tab" href="#home" onclick="location.href='@Url.Action("Index", "ComponentesPolizasTipoDoc")'">Tipo de Documentacion</a></li>
+                <li><a data-toggle="tab" href="#menu1" onclick="location.href='@Url.Action("Index", "ComponentesPolizasPol")'">Polizas</a></li>
+                <li><a data-toggle="tab" href="#menu2" onclick="location.href='@Url.Action("Index", "ComponentePolizasProducto")'">Productos</a></li>
+                <li class="active"><a data-toggle="tab" href="#menu3" onclick="location.href='@Url.Action("Index", "ComponentesPolizasDoc")'">Documentacion</a></li>
+
+            </ul><br />
+
+            <div class="tab-content">
+                <div class="col-md-10"></div>
+
+                <input type="button" id="btnAgregar" class="btn btn-primary" value="Nuevo" onclick="location.href='@Url.Action("FormIndex", "ComponentesPolizasDoc")'" />
+
+                <div class="DivisorH"></div>
+                <div id="home" class="tab-pane fade in active">
+
+
+                </div>
+                <div id="menu1" class="tab-pane fade">
+
+                </div>
+                <div id="menu2" class="tab-pane fade">
+
+                </div>
+                <div id="menu3" class="tab-pane fade">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="panel-body">
+            <div class="col-md-12">
+                <table class="table table-striped table-bordered table-hover dataTables-example">
+                    <thead>
+                        <tr>
+                            <th>Num</th>
+                            <th>Titular</th>
+                            <th>Tipo</th>
+                            <th>Documento</th>
+                            <th>Activa</th>
+                            <th>Accion</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="gradeX">
+                            <td>Trident</td>
+                            <td>
+                                Internet
+                                Explorer 4.0
+                            </td>
+                            <td>Win 95+</td>
+                            <td class="center">4</td>
+                            <td class="center">X</td>
+                            <td class="center">
+                                <button data-ajax="true" id="btnVer" type="submit" class="btn btn-primary">Ver</button>
+                                <button data-ajax="true" id="btnEditar" type="submit" class="btn btn-primary">Editar </button>
+                                <button data-ajax="true" id="btnEliminar" type="submit" class="btn btn-primary">Eliminar</button>
+                            </td>                      
+
+                        </tr>
+                        <tr class="gradeC">
+                            <td>Trident</td>
+                            <td>
+                                Internet
+                                Explorer 5.0
+                            </td>
+                            <td>Win 95+</td>
+                            <td class="center">5</td>
+                            <td class="center">C</td>
+                            <td class="center">
+                                <button data-ajax="true" id="btnVer" type="submit" class="btn btn-primary">Ver</button>
+                                <button data-ajax="true" id="btnEditar" type="submit" class="btn btn-primary">Editar </button>
+                                <button data-ajax="true" id="btnEliminar" type="submit" class="btn btn-primary">Eliminar</button>
+                            </td>
+                          
+
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>
+                                Internet
+                                Explorer 5.5
+                            </td>
+                            <td>Win 95+</td>
+                            <td class="center">5.5</td>
+                            <td class="center">A</td>
+                            <td class="center">
+                                <button data-ajax="true" id="btnVer" type="submit" class="btn btn-primary">Ver</button>
+                                <button data-ajax="true" id="btnEditar" type="submit" class="btn btn-primary">Editar </button>
+                                <button data-ajax="true" id="btnEliminar" type="submit" class="btn btn-primary">Eliminar</button>
+                            </td>
+                        
+
+                        </tr>
+                        <tr class="gradeA">
+                            <td>Trident</td>
+                            <td>
+                                Internet
+                                Explorer 6
+                            </td>
+                            <td>Win 98+</td>
+                            <td class="center">6</td>
+                            <td class="center">A</td>
+                            <td class="center">
+                                <button data-ajax="true" id="btnVer" type="submit" class="btn btn-primary">Ver</button>
+                                <button data-ajax="true" id="btnEditar" type="submit" class="btn btn-primary">Editar </button>
+                                <button data-ajax="true" id="btnEliminar" type="submit" class="btn btn-primary">Eliminar</button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+        $(document).ready(function () {
+            $('.dataTables-example').dataTable({
+                responsive: true,
+                "dom": 'T<"clear">lfrtip',
+                "tableTools": {
+                    "sSwfPath": "js/copy_csv_xls_pdf.swf"
+                }
+            });
+
+            /* Init DataTables */
+            //var oTable = $('#editable').dataTable();
+
+            /* Apply the jEditable handlers to the table */
+            //oTable.$('td').editable( '../example_ajax.php', {
+            //    "callback": function( sValue, y ) {
+            //        var aPos = oTable.fnGetPosition( this );
+            //        oTable.fnUpdate( sValue, aPos[0], aPos[1] );
+            //    },
+            //    "submitdata": function ( value, settings ) {
+            //        return {
+            //            "row_id": this.parentNode.getAttribute('id'),
+            //            "column": oTable.fnGetPosition( this )[2]
+            //        };
+            //    },
+
+            //    "width": "90%",
+            //    "height": "100%"
+            //} );
+
+
+        });
+
+        //function fnClickAddRow() {
+        //    $('#editable').dataTable().fnAddData( [
+        //        "Custom row",
+        //        "New row",
+        //        "New row",
+        //        "New row",
+        //        "New row" ] );
+
+        //}
+</script>
+

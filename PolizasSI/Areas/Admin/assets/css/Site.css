@@ -1,0 +1,192 @@
+﻿body {
+
+    padding-bottom: 20px;
+    font-size: 10px;
+}
+
+.DivisorH {
+    background-color: #D4D4D5;
+    height: 1px;
+    width: 99%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 5px;
+}
+#ant{
+          margin-top:-10px;
+          padding-right:30px;
+}
+
+#btnVer {
+    height: 25px;
+    width: 45px;
+    font-size: 10px;
+    color: #000000;
+    text-align: left;
+    border-radius: 1px 1px 1px 1px;
+    -moz-border-radius: 1px 1px 1px 1px;
+    -webkit-border-radius: 1px 1px 1px 1px;
+    background-color: #EBEBEB;
+    border: 1px solid #EBEBEB;
+}
+
+#btnEditar {
+    height: 25px;
+    width: 60px;
+    font-size: 10px;
+    color: #000000;
+    text-align: left;
+    border-radius: 1px 1px 1px 1px;
+    -moz-border-radius: 1px 1px 1px 1px;
+    -webkit-border-radius: 1px 1px 1px 1px;
+    background-color: #18BB95;
+    border: 1px solid #18BB95;
+}
+
+#btnEliminar {
+    height: 25px;
+    width: 70px;
+    font-size: 10px;
+    color: #FFFFFF;
+    text-align: left;
+    border-radius: 1px 1px 1px 1px;
+    -moz-border-radius: 1px 1px 1px 1px;
+    -webkit-border-radius: 1px 1px 1px 1px;
+    background-color: #BA0202;
+    border: 1px solid #BA0202;
+}
+
+#btnAgregarP {
+    padding-top:5px;
+    height: 30px;
+    width: 70px;
+    font-size: 12px;
+}
+
+label {
+    font-size: 12px;
+}
+
+input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 25px;
+    width: 200px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+input[type=password] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    height: 25px;
+    width: 200px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+#estadopoliza, #poltitular, #poltipo, #rpcliente, #rpseguro, #rpestatus, #adminGrupo {
+    height: 25px;
+    width: 200px;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    border: 1px solid #bdbdbd;
+    background-color: #FFFFFF;
+}
+
+#red {
+    display: inline-block;
+    width: 10px;
+    height: 30px;
+    margin-left: 160px;
+    vertical-align: middle;
+    border-top: 7px solid #000000;
+    border-right: 7px solid transparent;
+    border-bottom: 0 dotted;
+    border-left: 7px solid transparent;
+    content: "";
+}
+
+body.DTTT_Print {
+    background: #fff;
+}
+
+.DTTT_Print #page-wrapper {
+    margin: 0;
+    background: #fff;
+}
+
+button.DTTT_button, div.DTTT_button, a.DTTT_button {
+    border: 1px solid #e7eaec;
+    background: #fff;
+    color: #676a6c;
+    box-shadow: none;
+    padding: 6px 8px;
+}
+
+    button.DTTT_button:hover, div.DTTT_button:hover, a.DTTT_button:hover {
+        border: 1px solid #d2d2d2;
+        background: #fff;
+        color: #676a6c;
+        box-shadow: none;
+        padding: 6px 8px;
+    }
+
+.dataTables_filter label {
+    margin-right: 5px;
+}
+
+tr {
+    font-size: 12px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+    .dropdown-submenu > .dropdown-menu {
+        top: 0;
+        left: 100%;
+        margin-top: -6px;
+        margin-left: -1px;
+        -webkit-border-radius: 0 6px 6px 6px;
+        -moz-border-radius: 0 6px 6px;
+        border-radius: 0 6px 6px 6px;
+    }
+
+    .dropdown-submenu:hover > .dropdown-menu {
+        display: block;
+    }
+
+    .dropdown-submenu > a:after {
+        display: block;
+        content: " ";
+        float: right;
+        width: 0;
+        height: 0;
+        border-color: transparent;
+        border-style: solid;
+        border-width: 5px 0 5px 5px;
+        border-left-color: #ccc;
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+
+    .dropdown-submenu:hover > a:after {
+        border-left-color: #fff;
+    }
+
+    .dropdown-submenu.pull-left {
+        float: none;
+    }
+
+        .dropdown-submenu.pull-left > .dropdown-menu {
+            left: -100%;
+            margin-left: 10px;
+            -webkit-border-radius: 6px 0 6px 6px;
+            -moz-border-radius: 6px 0 6px 6px;
+            border-radius: 6px 0 6px 6px;
+        }

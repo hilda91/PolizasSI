@@ -1,0 +1,114 @@
+﻿<div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+        <div class="panel panel-default">
+            <div class="pull-right" id="ant">
+                <ul class="pager">
+                    <li class="previous"><a href="#" onclick="location.href='@Url.Action("Index", "ComponentesPolizasPol")'" class="glyphicon glyphicon-arrow-left"></a></li>
+                </ul>
+            </div>
+            <div class="panel-heading">Agregar Poliza</div>
+            <div class="panel-body">
+
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Poliza</label>
+                        <input type="text" name="poliza" class="form-control" />
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Estado de Poliza</label><br />
+                        <button class="btn btn-default dropdown-toggle" type="button" id="estadopoliza" data-toggle="dropdown">
+                            <span class="caret" id="red"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Titular</label>
+                        <input type="text" name="titular" class="form-control" id="fecha" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Ramo / Seguro</label>
+                        <input type="text" name="ramo/seguro" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Forma de Pago</label>
+                        <input type="text" name="formapago" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Inicio de Vigencia</label>
+                        <input type="text" name="vigencia" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Derecho Poliza</label>
+                        <input type="text" name="derecho" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Prima Neta</label>
+                        <input type="text" name="neta" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Prima Total</label>
+                        <input type="text" name="total" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Contacto de Pago</label>
+                        <input type="text" name="contacto" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Moneda</label>
+                        <input type="text" name="moneda" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Observaciones</label>
+                        <div class="summernote"></div>
+                    </div>
+                </div>
+                <br />
+                <div class="col-md-6">
+                    <div class="text-right">
+                        <button data-ajax="true" id="btnAgregar" type="submit" class="btn btn-primary">Agregar</button>
+                        <button data-ajax="true" id="btnCancelar" type="submit" class="btn btn-secondary">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).on('ready', function () {
+
+        $('.summernote').summernote({
+            height: 300,                 // set editor height
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+            focus: true                  // set focus to editable area after initializing summernote
+        });
+
+
+    });
+</script>
+
+

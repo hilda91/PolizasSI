@@ -1,0 +1,39 @@
+﻿<div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+        <div class="panel panel-default">
+            <div class="pull-right" id="ant">
+                <ul class="pager">
+                    <li class="previous"><a href="#" onclick="location.href='@Url.Action("Index", "ComponentePolizasProducto")'" class="glyphicon glyphicon-arrow-left"></a></li>
+                </ul>
+            </div>
+            <div class="panel-heading">Agregar Producto</div>
+            <div class="panel-body">
+                <div class="col-md-1"></div>
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label>Producto</label>
+                        <input type="text" name="producto" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div class="col-md-2"></div>   <label>Compuesto</label>
+                    <div class="radio">
+                        <label><input type="radio" name="optradio"> Si</label>
+                        <div class="col-md-2"></div>
+                        <label><input type="radio" name="optradio"> No</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-right">
+                        <button data-ajax="true" id="btnAgregar" type="submit" class="btn btn-primary">Agregar</button>
+                        <button data-ajax="true" id="btnCancelar" type="submit" class="btn btn-secondary">Cancelar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

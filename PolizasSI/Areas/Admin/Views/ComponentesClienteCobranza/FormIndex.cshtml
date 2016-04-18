@@ -1,0 +1,78 @@
+﻿<div class="row">
+    <div class="col-xs-2"></div>
+    <div class="col-xs-8">
+        <div class="panel panel-default">
+            <div class="pull-right" id="ant">
+                <ul class="pager">
+                    <li class="previous"><a href="#" onclick="location.href='@Url.Action("Index", "ComponentesClienteCobranza")'" class="glyphicon glyphicon-arrow-left"></a></li>
+                </ul>
+            </div>
+            <div class="panel-heading">Agregar Documentacion</div>
+            <div class="panel-body">
+
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Poliza</label>
+                        <input type="text" name="poliza" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Cliente</label><br />
+                        <button class="btn btn-default dropdown-toggle" type="button" id="rpcliente" data-toggle="dropdown">
+                            <span class="caret" id="red"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Fecha Pago</label>
+                        <input type="text" name="poliza" class="form-control" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Seguro</label><br />
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="rpseguro">
+                            <span class="caret" id="red"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Total</label>
+                        <input type="text" name="poliza" class="form-control" id="fecha" />
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Estatus</label><br />
+                        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" id="rpestatus">
+                            <span class="caret" id="red"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label>Comentarios</label>
+                        <div class="summernote"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).on('ready', function () {
+
+        $('.summernote').summernote({
+            height: 300,                 // set editor height
+            minHeight: null,             // set minimum height of editor
+            maxHeight: null,             // set maximum height of editor
+            focus: true                  // set focus to editable area after initializing summernote
+        });
+
+
+    });
+</script>

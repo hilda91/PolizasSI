@@ -1,0 +1,60 @@
+﻿<div class="row">
+<div class="col-xs-2"></div>
+<div class="col-xs-8">
+    <div class="panel panel-default">
+        <div class="pull-right" id="ant">
+            <ul class="pager">
+                <li class="previous"><a href="#"   onclick="location.href='@Url.Action("Index", "ComponentesPolizasDoc")'" class="glyphicon glyphicon-arrow-left"></a></li>
+            </ul>
+        </div>
+        <div class="panel-heading">Agregar Documentacion</div>
+        <div class="panel-body">
+
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label>Titular</label>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="poltitular" data-toggle="dropdown">
+                        <span class="caret" id="red"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label>Tipo</label>
+                    <button class="btn btn-default dropdown-toggle" type="button" id="poltipo" data-toggle="dropdown">
+                        <span class="caret" id="red"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="form-group">
+                    <label>Activa</label>
+                    <label class="checkbox-inline"><input type="checkbox" value="">Si</label>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <label class="control-label">Documento</label>
+                <input id="input-4" name="input4[]" type="file" multiple class="file-loading">
+            </div><br />
+            <br />
+            <div class="col-md-6">
+                <div class="text-right">
+                    <button data-ajax="true" id="btnAgregar" type="submit" class="btn btn-primary">Agregar</button>
+                    <button data-ajax="true" id="btnCancelar" type="submit" class="btn btn-secondary">Cancelar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+    </div>
+
+
+<script>
+    $(document).on('ready', function () {
+        $("#input-4").fileinput({ showCaption: false });
+
+    });
+</script>
+
